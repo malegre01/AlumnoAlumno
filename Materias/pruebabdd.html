@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="desc">
+    <button type="button" onclick="writeUserinSubject()" name="button"> Hola</button>
+    <button type="button" onclick="traer()" name="button"> Chau</button>
+    <ul id="posts"></ul>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+
+      var config = {
+        apiKey: "AIzaSyCO5WuBOWX_Asz1dLu-KxZ-TKiZ7dbpOwA",
+        authDomain: "prueba-498d1.firebaseapp.com",
+        databaseURL: "https://prueba-498d1.firebaseio.com",
+        projectId: "prueba-498d1",
+        storageBucket: "prueba-498d1.appspot.com",
+        messagingSenderId: "841313997913"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="bddMaterias.js"></script>
+  </body>
+</html>

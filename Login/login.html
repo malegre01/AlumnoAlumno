@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Log in</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="estilolog.css" />
+  <link rel="stylesheet" href="hovermaster/css/hover-min.css">
+</head>
+<body>
+
+  <div id="login_div" class="login-div">
+    <h3 class="datos">Ingrese sus datos aqui</h3>
+    <input type="email" placeholder="Email..." class="email-field" id="email_field">
+    <input type="password" placeholder="Contrase&ntilde;a..." class="password-field" id="password_field">
+    <button class="hvr-glow hvr-float-shadow" onclick="login()">Ingresar</button>
+    <br>
+    <a href="..\Registro\Register.html" >¿No tienes una cuenta? crea una aqui</a>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div> 
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+
+    var config = {
+      apiKey: "AIzaSyCO5WuBOWX_Asz1dLu-KxZ-TKiZ7dbpOwA",
+      authDomain: "prueba-498d1.firebaseapp.com",
+      databaseURL: "https://prueba-498d1.firebaseio.com",
+      projectId: "prueba-498d1",
+      storageBucket: "prueba-498d1.appspot.com",
+      messagingSenderId: "841313997913"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
