@@ -58,7 +58,7 @@ var userId = firebase.auth().currentUser.uid;
       // The write failed...
     } else {
       window.alert("Data saved successfully");
-      window.location.href = '../index.html';
+      window.location.href = '../Login/login.html';
 
       // window.location.replace("../Login/login.html");
       // Data saved successfully!
