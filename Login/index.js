@@ -1,3 +1,4 @@
+firebase.auth().useDeviceLanguage();
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -26,11 +27,14 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 function login(){
-
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
+  loginn(userEmail, userPass);
+}
+function loginn(Email,Pass){
 
-  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(function(){
+
+  firebase.auth().signInWithEmailAndPassword(Email,Pass).then(function(){
     var userId=firebase.auth().currentUser.uid;
 
  /* return firebase.database().ref('/usuarios/' + userId).once('value').then(function(snapshot)

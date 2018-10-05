@@ -1,4 +1,4 @@
-
+firebase.auth().useDeviceLanguage();
 
 var alogout =document.getElementById('alogout');
 var alogin =document.getElementsByClassName('alogin');
