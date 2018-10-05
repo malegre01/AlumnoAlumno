@@ -30,31 +30,39 @@ function login(){
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
 
-  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(function(){
-    var userId=firebase.auth().currentUser.uid;
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .then(function(){
+      var userId=firebase.auth().currentUser.uid;
 
- /* return firebase.database().ref('/usuarios/' + userId).once('value').then(function(snapshot)
-    {
-      var nombree = (snapshot.val() && snapshot.val().name) || 'Anonymous';
-      var apellidoo = (snapshot.val() && snapshot.val().surname) || 'Anonymous';
-      alert("Bienvenido " + nombree +""+ apellidoo);
-<<<<<<< HEAD
-      window.location.replace("../index.html");
-=======
-      window.location.href= '../index.html'; */
+   /* return firebase.database().ref('/usuarios/' + userId).once('value').then(function(snapshot)
+      {
+        var nombree = (snapshot.val() && snapshot.val().name) || 'Anonymous';
+        var apellidoo = (snapshot.val() && snapshot.val().surname) || 'Anonymous';
+        alert("Bienvenido " + nombree +""+ apellidoo);
+  <<<<<<< HEAD
+        window.location.replace("../index.html");
+  =======
+        window.location.href= '../index.html'; */
 
-    console.log(userId);
-    var ref = firebase.database().ref("usuarios/"+userId);
-  ref.once("value")
-    .then(function(snapshot) {
-      var name = snapshot.child("name").val(); // {first:"Ada",last:"Lovelace"}
-      var firstName = snapshot.child("name").val(); // "Ada"
-      var lastName = snapshot.child("surname").val(); // "Lovelace"
-      var age = snapshot.child("phone").val(); // null
-      alert("Bienvenido: "+firstName+" "+lastName);
+      console.log(userId);
+      var ref = firebase.database().ref("usuarios/"+userId);
+    ref.once("value")
+      .then(function(snapshot) {
+        var name = snapshot.child("name").val(); // {first:"Ada",last:"Lovelace"}
+        var firstName = snapshot.child("name").val(); // "Ada"
+        var lastName = snapshot.child("surname").val(); // "Lovelace"
+        var age = snapshot.child("phone").val(); // null
+        alert("Bienvenido: "+firstName+" "+lastName);
 
 
-    });
+      });
+      .catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
     window.location.href = '../index.html';
 
 
