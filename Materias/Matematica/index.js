@@ -1,19 +1,23 @@
   var materia = "matematica";
   var ref = firebase.database().ref('materias/' +materia);
-  const list = document.getElementById('posts');
-  list.innerHTML = '';
+  const list = document.getElementById('posts')
+  const divNom = document.getElementById('name');
+  const divApe = document.getElementById('surname');
+  const divDesc = document.getElementById('description');
+  const divNum = document.getElementById('telnumb');
+  divNom.innerHTML = '';
+  divApe.innerHTML = '';
+  divDesc.innerHTML = '';
+  divNum.innerHTML = '';
   ref.on("child_added", function(snapshot){
     console.log(snapshot.val().description);
-  if (snapshot.child().exists()) {
-    console.log("Bien");
-  }else {
-    console.log("Mal");
-  }
     var item = snapshot.key;
-    var Desc = snapshot.val().description;
+    var Desc = snapshot.val().description.;
     var first = snapshot.val().firstName;
     var last = snapshot.val().lastName;
-    list.innerHTML += `<li>Descripción: ${Desc}<br>Nombre: ${first}<br>Apellido: ${last}<br></li>`;
+    var num = snapshot.val().phoneNum;
+
+    list.innerHTML += `<li id="Skere">Descripción: ${Desc}<br>Nombre: ${first}<br>Apellido: ${last}<br><li id="Skere">Telefono: ${num}<br></li>`;
 
   });
 
@@ -25,7 +29,7 @@ function writeUserinSubject() {
       var name = snapshot.child("name").val(); // {first:"Ada",last:"Lovelace"}
       var firstName = snapshot.child("name").val(); // "Ada"
       var lastName = snapshot.child("surname").val(); // "Lovelace"
-      var age = snapshot.child("phone").val(); // null
+      var phoneNum = snapshot.child("phone").val(); // null
       console.log(materia);
 
       var about = document.getElementById('desc').value;
@@ -34,7 +38,8 @@ function writeUserinSubject() {
         //    uid:userId,
         description:about,
         firstName:firstName,
-        lastName:lastName
+        lastName:lastName,
+        phoneNum:phoneNum
       }, function(error) {
         if (error) {
           window.alert("The write failed... ");
