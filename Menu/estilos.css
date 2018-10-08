@@ -149,7 +149,7 @@ header nav a:hover{
   }
 }
 .signupbtn{
-  margin: 0px;
+margin-top: 15px;
   font-family: 'Rubik', sans-serif;
   background: #5d8ffc;
   color: #fff;
@@ -165,8 +165,8 @@ header nav a:hover{
   -moz-transition: 0.3s;
 }
 .cancelbtn{
-  align-items: center;
-  margin: 0px;
+  margin-top: 15px;
+  display: flex;
   font-family: 'Rubik', sans-serif;
   background: #5d8ffc;
   color: #fff;
@@ -184,17 +184,31 @@ header nav a:hover{
 .login1{
 border-radius: 15px;
 border:1px solid #777;
+width: 300px;
+height: 35px;
 }
 
 .pass1{
 border-radius: 15px;
 border:1px solid #777;
-
+width: 300px;
+height: 35px;
 }
 .loginn{
-  align-items: center;
+display: none;
+  margin-left: 400px;
+  margin-top: 50px;
 }
-
+.isd{
+  font-family: Muli;
+  margin-left: 190px;
+  font-style: bold;
+  font-size: 30px;
+}
+.redirect{
+  margin-top: 60px;
+  margin-left: 180px;
+}
 .email{
 border-radius: 15px;
 }
