@@ -4,6 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="estiloreg.css" />
   <link rel="stylesheet" href="hovermaster/css/hover-min.css">
+  <link rel="stylesheet" href="intl-tel-input-14.0.0/build/css/intlTelInput.css">
   <link rel="icon" href="Menu\Media\A-A.ico">
 </head>
 <body>
@@ -23,11 +24,25 @@
     <input type="email" placeholder="Email..." class="email-field" id="email_field" required>
     <input type="password" placeholder="Contrase&ntilde;a..." class="password-field" id="password_field" required>
   <input type="password" placeholder="Repetir contrase&ntilde;a..." class="rpassword-field" id="rpassword_field" required>
-      <input type="number" id="number_field" class="number-field"
-             placeholder="Tel:11-2345-6789"
-             pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}-[0-9]{4}"
-             required />
-      <span class="validity"></span>
+      <input type= "number" id="phone" class="form-control" autocomplete="off"  pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}
+"required/>
+
+
+
+ <script src="intl-tel-input-14.0.0/build/js/intlTelInput.js"></script>
+ <script src="intl-tel-input-14.0.0/build/js/utils.js"></script>
+ 
+
+<script>
+  var input = document.querySelector("#phone");
+  window.intlTelInput(input);
+</script>
+
+<script>var countryData = iti.getSelectedCountryData();</script>
+<script>var error = iti.getValidationError();</script>
+<script>var isValid = iti.isValidNumber();</script>
+
+
 
   <!--  <input type="tel" placeholder="Telefono..." class="number-field" id="number_field"> -->
     <button class="hvr-glow hvr-float-shadow" onclick="register()">Registrar</button>
