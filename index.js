@@ -3,6 +3,10 @@ firebase.auth().useDeviceLanguage();
 var alogout =document.getElementById('alogout');
 var alogin =document.getElementsByClassName('alogin');
 var aregistro =document.getElementsByClassName('aregistro');
+var divLogin = document.getElementsByClassName('loginn')
+function regg(){
+  divLogin = "block";
+}
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
 
