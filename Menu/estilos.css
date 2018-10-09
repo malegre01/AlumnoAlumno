@@ -1,7 +1,7 @@
 *{margin:0; padding:0; }
 
-.Sunset{
-  width: 100%;
+*h4{
+  opacity: 0%;
 }
 
 body{
@@ -11,18 +11,48 @@ header{
   width: 100%;
   overflow: hidden;
   background: #000;
+  position: relative;
+  z-index: 1;
 }
 a#alogout{
   display: hidden;
 }
 .aregistro{
-  position: relative;
-  right:0px;
 }
 
 .logo{
-  font-family: Kodchasan;
+  font-family: 'Work Sans', sans-serif;
+}
+  .btnmaterias{
+    margin: 0px;
+    display:flex;
+    font-family: 'Rubik', sans-serif;
+    background: #5d8ffc;
+    color: #fff;
+    border: 1px solid #5d8ffc;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 15px;
+    display: block;
+    width: 300px;
+    height: 80px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    margin-top: 300px;
+    margin-right:50px;
+  }
+  .quecon{
+    margin: 0;
+  margin-left:90px;
 
+  }
+.aprender{
+  margin-left: 130px;
+}
+.nohay{
+margin-top: 40px;
+margin-left: 10px;
 }
 .logotipo{
   line-height:80px;
@@ -37,6 +67,29 @@ margin: auto;
 overflow: hidden
 }
 
+.content-img{
+  background-image: url('./Media/FondoDePagina.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:100vh;
+  width: 100%;
+}
+.bgtxt{
+  background-color: #ff0000;
+  opacity: 0.6;
+}
+.content-txt{
+font-family: Muli;
+font-style: regular;
+float: right;
+margin: 0px;
+color: #000;
+margin-left: 360px;
+margin-top: 100px;
+font-size: 30px;
+position: relative;
+left: 320px;
+}
 header .logo {
   color: #f2f2f2;
   font-size: 50px;
@@ -96,4 +149,59 @@ header nav a:hover{
     line-height: 80px;
 
   }
+}
+.content.two{
+  width: 100%;
+  padding:40px;
+  background: #f2f2f2;
+  font-family: Muli;
+}
+
+.content-details{
+  width: 80%;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-item2{
+width: 300px;
+text-align: center;
+margin:20px;
+font-family: Muli;
+}
+
+.content-three{
+  width: 100%;
+  background: #f7f7f7;
+  padding-bottom: 40px;
+}
+
+.content-module{
+  width: 80%;
+margin: auto;
+text-align: center;
+font-family: Muli;
+}
+
+.skel{
+  float: left;
+}
+
+.cards{
+  float: right;
+}
+.content-module h3{
+  margin-top: 40px;
+  padding-top: 20px;
+
+}
+.content-module img{
+  transition: all 300ms;
+  margin-top: 40px;
+}
+.content-module img:hover{
+  transform: rotate(-10deg);
+  transition: all 300ms;
 }
