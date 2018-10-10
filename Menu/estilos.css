@@ -25,6 +25,7 @@ a#alogout{
 }
   .btnmaterias{
     margin: 0px;
+    outline-style: none;
     display:flex;
     font-family: 'Rubik', sans-serif;
     background: #5d8ffc;
