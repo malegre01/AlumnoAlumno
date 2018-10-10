@@ -8,7 +8,7 @@
   outline: none;
 }
 .cargarm{
-color: #5d8ffc 
+color: #5d8ffc
 }
 
 .btnpublish{
@@ -78,6 +78,20 @@ header nav a:hover{
   background: #3d3838;
   border-radius: 50px;
 }
-.cajapublicar{
-  margin-top: 40px;
+
+.post{
+  width: auto;
+  height:auto;
+  background-color: blue;
+}
+.post-name{
+
+}
+
+.post-desc{
+
+}
+
+.post-num{
+
 }
