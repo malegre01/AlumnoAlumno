@@ -55,7 +55,7 @@ function writeUserinSubject() {
 
       var about = document.getElementById('desc').value;
 
-      firebase.database().ref('materias/' +materia+).push({
+      firebase.database().ref('materias/' +materia).push({
         //    uid:userId,
         description:about,
         firstName:firstName,
