@@ -9,37 +9,39 @@
     var first = snapshot.val().firstName;
     var last = snapshot.val().lastName;
     var num = snapshot.val().phoneNum;
-    
-    // Create the DOM elements.
-    var postDiv = document.createElement("div");
+    MostarDivs(first,last,Desc,num);
 
-    var postNameDiv = document.createElement("div");
-    var postDescDiv = document.createElement("div");
-    var postNumDiv = document.createElement("div");
-
-    // Set the content of each element.
-    postNameDiv.innerHTML = first+" "+last;
-    postDescDiv.innerHTML = "Descripción:  "+Desc;
-    postNumDiv.innerHTML = "Número:  "+num;
-
-    // Set CSS classes on each div so they can be styled.
-    postDiv.setAttribute("class", "post");
-    postNameDiv.setAttribute("class", "post-name");
-    postDescDiv.setAttribute("class", "post-desc");
-    postNumDiv.setAttribute("class", "post-num");
-
-
-    // Assemble the post div.
-    postDiv.appendChild(postNameDiv);
-    postDiv.appendChild(postDescDiv);
-    postDiv.appendChild(postDescDiv);
-    postDiv.appendChild(postNumDiv);
-
-    // Add the post div to the container for posts.
-    postsDiv.appendChild(postDiv);
 
   });
+ function MostarDivs(nombre, apee, descr, nume){
+   // Create the DOM elements.
+   var postDiv = document.createElement("div");
 
+   var postNameDiv = document.createElement("div");
+   var postDescDiv = document.createElement("div");
+   var postNumDiv = document.createElement("div");
+
+   // Set the content of each element.
+   postNameDiv.innerHTML = nombre+" "+apee;
+   postDescDiv.innerHTML = "Descripción:  "+descr;
+   postNumDiv.innerHTML = "Número:  "+nume;
+
+   // Set CSS classes on each div so they can be styled.
+   postDiv.setAttribute("class", "post");
+   postNameDiv.setAttribute("class", "post-name");
+   postDescDiv.setAttribute("class", "post-desc");
+   postNumDiv.setAttribute("class", "post-num");
+
+
+   // Assemble the post div.
+   postDiv.appendChild(postNameDiv);
+   postDiv.appendChild(postDescDiv);
+   postDiv.appendChild(postDescDiv);
+   postDiv.appendChild(postNumDiv);
+
+   // Add the post div to the container for posts.
+   postsDiv.appendChild(postDiv);
+ }
 function writeUserinSubject() {
   var userId = firebase.auth().currentUser.uid;
   var ref = firebase.database().ref('usuarios/'+userId);
