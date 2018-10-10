@@ -7,7 +7,7 @@
   display: block;
   outline: none;
 }
-*{background-color: #f2f2f2;}
+
 .cargarm{
 color: #5d8ffc
 }
@@ -29,6 +29,7 @@ header{
   width: 100%;
   overflow: hidden;
   background: #000;
+
 }
 
 .logo{
@@ -79,37 +80,51 @@ header nav a:hover{
   background: #3d3838;
   border-radius: 50px;
 }
-
-.post hvr-glow{
-  width: 600px;
-  height: 350px;
-  margin-left: 50%;
-  background-color:#fff;
-
+.bground{
+  background-image: url('../Media/Matematica.jpg');
+  background-size: cover;
+  repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.post {
+padding:20px;
+background-color: transparent;
 }
 .post-name{
-  width: auto;
-  height: auto;
-  font-size: 24px;
+  margin-left: 350px;
+  width: 600px;
+  height: 60px;
+  font-size: 34px;
+  font-style: bold;
   font-family: Muli;
-  background-color: #7caeff;
-  color:#8b8e93 ;
+  background-color:#000;
+  opacity: 0.8;
+  color:#fff ;
+  padding: 10px;
 }
 
 .post-desc{
-  width: auto;
-  height: auto;
+  margin-left:350px;
+  width: 600px;
+  height: 90px;
   font-size: 24px;
   font-family: Muli;
-  background-color: #7caeff;
-  color:#8b8e93 ;
+  opacity: 0.8;
+  background-color:#000;
+  color:#fff ;
+  padding: 10px;
+
 }
 
 .post-num{
-width: auto;
-height: auto;
+  margin-left: 350px;
+width: 600px;
+height: 40px;
+opacity: 0.8;
 font-size: 24px;
 font-family: Muli;
-background-color: #7caeff;
-color:#8b8e93;
+background-color: #000;
+color:#fff;
+padding: 10px;
 }
