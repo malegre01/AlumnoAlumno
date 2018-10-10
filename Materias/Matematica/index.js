@@ -1,23 +1,42 @@
   var materia = "matematica";
   var ref = firebase.database().ref('materias/' +materia);
-  const list = document.getElementById('posts')
-  const divNom = document.getElementById('name');
-  const divApe = document.getElementById('surname');
-  const divDesc = document.getElementById('description');
-  const divNum = document.getElementById('telnumb');
-  divNom.innerHTML = '';
-  divApe.innerHTML = '';
-  divDesc.innerHTML = '';
-  divNum.innerHTML = '';
+  var postsDiv = document.getElementById('posts');
+
   ref.on("child_added", function(snapshot){
     console.log(snapshot.val().description);
     var item = snapshot.key;
-    var Desc = snapshot.val().description.;
+    var Desc = snapshot.val().description;
     var first = snapshot.val().firstName;
     var last = snapshot.val().lastName;
     var num = snapshot.val().phoneNum;
+    
+    // Create the DOM elements.
+    var postDiv = document.createElement("div");
 
-    list.innerHTML += `<li id="Skere">Descripción: ${Desc}<br>Nombre: ${first}<br>Apellido: ${last}<br><li id="Skere">Telefono: ${num}<br></li>`;
+    var postNameDiv = document.createElement("div");
+    var postDescDiv = document.createElement("div");
+    var postNumDiv = document.createElement("div");
+
+    // Set the content of each element.
+    postNameDiv.innerHTML = first+" "+last;
+    postDescDiv.innerHTML = "Descripción:  "+Desc;
+    postNumDiv.innerHTML = "Número:  "+num;
+
+    // Set CSS classes on each div so they can be styled.
+    postDiv.setAttribute("class", "post");
+    postNameDiv.setAttribute("class", "post-name");
+    postDescDiv.setAttribute("class", "post-desc");
+    postNumDiv.setAttribute("class", "post-num");
+
+
+    // Assemble the post div.
+    postDiv.appendChild(postNameDiv);
+    postDiv.appendChild(postDescDiv);
+    postDiv.appendChild(postDescDiv);
+    postDiv.appendChild(postNumDiv);
+
+    // Add the post div to the container for posts.
+    postsDiv.appendChild(postDiv);
 
   });
 
