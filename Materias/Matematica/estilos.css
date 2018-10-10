@@ -7,6 +7,7 @@
   display: block;
   outline: none;
 }
+*{background-color: #f2f2f2;}
 .cargarm{
 color: #5d8ffc
 }
@@ -79,19 +80,36 @@ header nav a:hover{
   border-radius: 50px;
 }
 
-.post{
-  width: auto;
-  height:auto;
-  background-color: blue;
+.post hvr-glow{
+  width: 600px;
+  height: 350px;
+  margin-left: 50%;
+  background-color:#fff;
+
 }
 .post-name{
-
+  width: auto;
+  height: auto;
+  font-size: 24px;
+  font-family: Muli;
+  background-color: #7caeff;
+  color:#8b8e93 ;
 }
 
 .post-desc{
-
+  width: auto;
+  height: auto;
+  font-size: 24px;
+  font-family: Muli;
+  background-color: #7caeff;
+  color:#8b8e93 ;
 }
 
 .post-num{
-
+width: auto;
+height: auto;
+font-size: 24px;
+font-family: Muli;
+background-color: #7caeff;
+color:#8b8e93;
 }
