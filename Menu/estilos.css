@@ -11,10 +11,9 @@ header{
   width: 100%;
   overflow: hidden;
   background: #000;
+  
 }
-a#alogout{
-  display: hidden;
-}
+
 .aregistro{
   position: relative;
   right:0px;

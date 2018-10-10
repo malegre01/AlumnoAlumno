@@ -4,17 +4,30 @@
     <meta charset="utf-8">
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="../hovermaster/css/hover-min.css">
-    <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Kodchasan|Lobster|Nanum+Gothic|Open+Sans+Condensed:300|Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <title>matematica</title>
   </head>
   <body>
-
-<<<<<<< HEAD
-    <input type="text" id="desc">
-    <button type="button" onclick="writeUserinSubject()" name="button"> Publicar</button>
-=======
-    <input type="text" id="desc" class="textbox hvr-" >
+    <header>
+      <div class="wrapper">
+      <div class="logo">Alumno-Alumno</div>
+      <nav>
+        <div class="wrapper">
+      <div id="user_div">
+        <a onclick="logout()" href="#"id="alogout">Log Out</a>
+        <a href="#">Contact Us</a>
+        <a href="#" class="cargarm"> Cargar Materia</a>
+      </div>
+    </div>
+      </nav>
+    </div>
+  </header>
+  <div class="cajapublicar" style="display:none;">
+    <input type="text" id="desc" placeholder="Carga tu materia" class="textbox hvr-float-shadow hvr-glow" >
     <button type="button" onclick="writeUserinSubject()" name="button"  class="btnpublish hvr-glow hvr-float-shadow"> Publicar</button>
->>>>>>> c84f63f7a2456531aa6ba4bbd3b8a4a8146a1fa3
+    </div>
     <div id="posts"></div>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script>
