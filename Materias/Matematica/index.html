@@ -2,13 +2,14 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="../hovermaster/css/hover-min.css">
     <title></title>
   </head>
   <body>
 
-    <input type="text" id="desc">
-    <button type="button" onclick="writeUserinSubject()" name="button"> Publicar</button>
+    <input type="text" id="desc" class="textbox hvr-" >
+    <button type="button" onclick="writeUserinSubject()" name="button"  class="btnpublish hvr-glow hvr-float-shadow"> Publicar</button>
     <div id="posts"></div>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script>
