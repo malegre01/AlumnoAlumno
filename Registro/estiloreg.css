@@ -10,6 +10,10 @@ input  {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
 }
+.selected-flag{
+  outline: none;
+  border-radius: 60px;
+}
 
 .iti-flag {
   background-image: url("intl-tel-input-14.0.0/build/img/flags.png");
