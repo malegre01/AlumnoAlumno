@@ -11,6 +11,81 @@
 color: #5d8ffc
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content  {
+    background-color: #fefefe;
+    margin: 7% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width:35%;
+    height:45%;
+  }
+
+.desc{
+  style="background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0px;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-size: 11pt;
+  height: 68px;
+  line-height: 18pt;
+  max-height: 140px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  padding: 10px 15px;
+  resize: none; width: 100%;
+  margin: 20% auto;
+
+
+
+}
+
+.cabeza {
+  border-bottom: none;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-top: 2px;
+
+}
+
+
+
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 2px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
 .btnpublish{
   background: #5d8ffc;
   color: #fff;
