@@ -1,18 +1,4 @@
 *{margin: 0px; padding: 0px;}
-.textbox{
-  border-radius: 100px;
-  margin-left: 500px;
-  width: 150px;
-  height: 35px;
-  display: block;
-  outline: none;
-}
-
-.cargarm{
-color: #5d8ffc
-}
-
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -86,6 +72,19 @@ color: #5d8ffc
 }
 
 
+
+.textbox{
+  border-radius: 100px;
+  margin-left: 500px;
+  width: 150px;
+  height: 35px;
+  display: block;
+  outline: none;
+}
+
+.cargarm{
+color: #5d8ffc
+}
 
 .btnpublish{
   background: #5d8ffc;
