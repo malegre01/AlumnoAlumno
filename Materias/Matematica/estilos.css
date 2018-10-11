@@ -87,6 +87,7 @@
 <<<<<<< HEAD
 
 =======
+>>>>>>> e50243001435ecba4e0af591bbbd66fc55187ba1
 .cargarm{
 color: #5d8ffc
 }
@@ -162,6 +163,8 @@ header nav a:hover{
 .bground{
   background-image: url('../Media/Matematica.jpg');
   background-size: cover;
+  padding: 0px; 
+  margin: 0px;
   repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -169,31 +172,35 @@ header nav a:hover{
 .post {
 padding:20px;
 background-color: transparent;
+.post hvr-glow{
+  width: 600px;
+  height: 350px;
+  margin-left: 50%;
+  background-color:#fff;
+
 }
 .post-name{
   margin-left: 350px;
-  width: 600px;
-  height: 60px;
-  font-size: 34px;
-  font-style: bold;
-  font-family: Muli;
-  background-color:#000;
-  opacity: 0.8;
-  color:#fff ;
-  padding: 10px;
+width: 600px;
+height: 40px;
+opacity: 0.8;
+font-size: 24px;
+font-family: Muli;
+background-color: #000;
+color:#fff;
+padding: 10px;
 }
 
 .post-desc{
-  margin-left:350px;
-  width: 600px;
-  height: 90px;
-  font-size: 24px;
-  font-family: Muli;
-  opacity: 0.8;
-  background-color:#000;
-  color:#fff ;
-  padding: 10px;
-
+  margin-left: 350px;
+width: 600px;
+height: 40px;
+opacity: 0.8;
+font-size: 24px;
+font-family: Muli;
+background-color: #000;
+color:#fff;
+padding: 10px;
 }
 
 .post-num{
