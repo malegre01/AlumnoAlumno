@@ -98,6 +98,10 @@ button {
 
 
 }
+.selected-flag{
+  outline: none;
+  border-radius: 60px;
+}
 
 .login-div button:hover  {
   cursor: pointer;
