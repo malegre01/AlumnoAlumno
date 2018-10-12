@@ -1,5 +1,6 @@
 *{margin: 0px; padding: 0px;}
 <<<<<<< HEAD
+<<<<<<< HEAD
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -76,6 +77,8 @@
 
 =======
 >>>>>>> e50243001435ecba4e0af591bbbd66fc55187ba1
+=======
+>>>>>>> master
 .textbox{
   border-radius: 100px;
   margin-left: 500px;
@@ -85,9 +88,13 @@
   outline: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> e50243001435ecba4e0af591bbbd66fc55187ba1
+=======
+
+>>>>>>> master
 .cargarm{
 color: #5d8ffc
 }
@@ -161,10 +168,15 @@ header nav a:hover{
   border-radius: 50px;
 }
 .bground{
+<<<<<<< HEAD
   background-image: url('../Media/Matematica.jpg');
   background-size: cover;
   padding: 0px; 
   margin: 0px;
+=======
+  background-image: url('../Media/Matematica.jpg')
+  background-size: cover;
+>>>>>>> master
   repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -172,6 +184,7 @@ header nav a:hover{
 .post {
 padding:20px;
 background-color: transparent;
+<<<<<<< HEAD
 .post hvr-glow{
   width: 600px;
   height: 350px;
@@ -201,6 +214,33 @@ font-family: Muli;
 background-color: #000;
 color:#fff;
 padding: 10px;
+=======
+}
+.post-name{
+  margin-left: 350px;
+  width: 600px;
+  height: 60px;
+  font-size: 34px;
+  font-style: bold;
+  font-family: Muli;
+  background-color:#000;
+  opacity: 0.8;
+  color:#fff ;
+  padding: 10px;
+}
+
+.post-desc{
+  margin-left:350px;
+  width: 600px;
+  height: 90px;
+  font-size: 24px;
+  font-family: Muli;
+  opacity: 0.8;
+  background-color:#000;
+  color:#fff ;
+  padding: 10px;
+
+>>>>>>> master
 }
 
 .post-num{

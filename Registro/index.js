@@ -8,41 +8,45 @@ function register(){
   var userRpass = document.getElementById("rpassword_field").value;
   var userName = document.getElementById("nombre_field").value;
   var userSurname = document.getElementById("apellido_field").value;
-  var userPhone = document.getElementById("number_field").value;
+  var userPhone = document.getElementById("phone").value;
 
+if (userEmail !== "" && userPass !== "" && userName !== "" && userSurname !== "" && userPhone !== "")  {
+  if (userPass == userRpass) {
+    firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).then(function(result)
+    {
 
-      //writeUserData(userName,userPass,userEmail,userPhone);
-if (userPass == userRpass) {
-  firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).then(function(result)
-{
+      writeUserData(userName,userSurname,userEmail,userPhone);
+      //location = "../Login/login.html";
+    }).catch(function(error) {
 
-  writeUserData(userName,userSurname,userEmail,userPhone);
-  //location = "../Login/login.html";
-}).catch(function(error) {
+      //  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
 
-//  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
+      window.alert("Error : " + errorMessage);
 
-    window.alert("Error : " + errorMessage);
-
-    // ...
-  });
+      // ...
+    });
+  } else {
+    alert("Las contraseñas no coinciden");
+  }
 } else {
-  alert("Las contraseñas no coinciden");
-}
+  alert("Complete todos los campos");
 }
 /*function traer(){
- var userId = firebase.auth().currentUser.uid;
+var userId = firebase.auth().currentUser.uid;
 return firebase.database().ref('/usuarios/' + userId).once('value').then(function(snapshot) {
-  var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-  // ...
+var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+// ...
 });
 window.alert(username);
 
 
 }*/
+
+}
+      //writeUserData(userName,userPass,userEmail,userPhone);
 
 function writeUserData(name,surname, email, phone) {
 var userId = firebase.auth().currentUser.uid;
