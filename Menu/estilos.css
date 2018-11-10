@@ -11,12 +11,14 @@ header{
   width: 100%;
   overflow: hidden;
   background: #000;
+<<<<<<< HEAD
+  
+=======
   position: relative;
   z-index: 1;
+>>>>>>> master
 }
-a#alogout{
-  display: hidden;
-}
+
 .aregistro{
 }
 
